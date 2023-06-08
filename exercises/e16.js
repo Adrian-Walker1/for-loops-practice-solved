@@ -7,7 +7,14 @@
 
 export function flatArrays(array) {
   // Your code goes here...
+  let flattenArray = []
 
+  for (let i = 0; i < array.length; i++) {
+    for (let x = 0; x < array[i].length; x++) {
+      flattenArray.push(array[i][x]);
+    }
+  }
+  return flattenArray;
 }
 
 
